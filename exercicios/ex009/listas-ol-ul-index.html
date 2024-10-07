@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2>Listas Ordenadas: com <strong>&lt;ol&gt;</strong></h2>
+    <p>Para criar um lista onde a ordem importa e pode-se acrescentar novos itens nela sem perder a numeração da orendem podemos criar uma <b>&lt;ol&gt;</b> que é uma ordered list (lista ordenada).</p>
+    <ol>
+        <li>Acordar</li>
+        <li>Desligar despertador</li>
+        <li>Chegar notificações</li>
+        <li>Mandar mensagens</li>
+        <li>Levantar</li>
+        <li>Preparar café da manhã</li>
+        <li>Tomar café da manhã</li>
+    </ol>
+    <p>Também é possível passar parâmetros do tipo de contagem e ordenação e em qual contagem ela começará assim:</p>
+    <pre>
+    <code>
+        &lt;ol type="1" start="4"&gt;                              
+            &lt;li&gt;Mandar mensagens&lt;/li&gt;                   
+            &lt;li&gt;Levantar&lt;/li&gt;                           
+            &lt;li&gt;Preparar café da manhã&lt;/li&gt;             
+            &lt;li&gt;Tomar café da manhã&lt;/li&gt;               
+        &lt;/ol&gt;                                                
+    </code>
+    </pre>
+    <ol type="1" start="4">
+        <li>Mandar mensagens</li>
+        <li>Levantar</li>
+        <li>Preparar café da manhã</li>
+        <li>Tomar café da manhã</li> 
+    </ol>
+    <h2>Listas não ordenadas: com <strong>&lt;ul&gt;</strong></h2><hr>
+    <p>Podemos criar listas não ordenadas usando &lt;ul&gt; elas possuem apenas 3 parâmetros que são: Disc, Circle e Square (quadrado)</p>
+    <ul type="circle">
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Danone</li>
+        <li>Alface</li>
+        <li>Suco de laranaja</li>
+        <li>Pão integral</li>
+    </ul>
+    <p>Para a lista acima, o código escrito ficará assim:</p>
+    <pre>
+        <code>
+    &lt;ul type="circle"&gt;
+        &lt;li&gt;Arroz&lt;/li&gt;
+        &lt;li&gt;Feijão&lt;/li&gt;
+        &lt;li&gt;Danone&lt;/li&gt;
+        &lt;li&gt;Alface&lt;/li&gt;
+        &lt;li&gt;Suco de laranja&lt;/li&gt;
+        &lt;li&gt;Pão integral&lt;/li&gt;
+    &lt;/ol&gt;
+        </code>
+    </pre><hr>
+    <h2>Junção de listas: com <strong>&lt;li&gt;</strong></h2>
+    <ul>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>C#</li>
+            <li>JavaScript</li>
+            <li>Phyton</li>
+            <li>PHP</li>
+            <li>Kotlin</li>
+            <li>Ruby</li>
+        </ol>
+    </ul>
+    <p>Lista de Jogos</p>
+    <ul type="square">
+        <li>Computador</li>
+        <ol type="I">
+            <li>Word of Warcraft</li>
+                <ol type="a">
+                    <li>Mystis of Pandaria</li>
+                    <li>Dragonflight</li>
+                    <li>The War Within</li>
+                    <li>Shadowlands</li>
+                </ol>
+            <li>The Elder Scroll: Skyrin</li>
+            <li>Grand Chase</li>
+        </ol>
+        <li>Playstation 1 e 2</li>
+        <ol type="I">
+            <li>Crash Bandicoot</li>
+            <li>Yu-ghi-oh</li>
+            <li>Guitar Hero III</li>
+        </ol>
+        <li>Xbox 360</li>
+        <ol type="I">
+            <li>The Elder Scroll: Skyrin</li>
+            <li>Guitar Hero: Rock Band</li>
+            <li>Diablo 3</li>
+        </ol>
+    </ul>
+    <h2>Lista de Definições: com <strong>&lt;dl&gt;</strong> <strong>&lt;dt&gt;</strong> <strong>&lt;dd&gt;</strong></h2>
+    <dl>
+        <dl>HTML</dl>
+        <dd>Linguagem de marcação para criação do conteúdo / estrutura de um site.</dd>
+        <dl>CSS</dl>
+        <dd>Linguagem de marcação para criação do design / estilo de um site.</dd>
+        <dl>JavaScript</dl>
+        <dd>Linguagem de programação para criação de interatividade / funcionalidade de um site.</dd>
+    </dl>
+</body>
+</html>

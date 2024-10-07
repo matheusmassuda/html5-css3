@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes com Google Fonts</title>
+    <style>
+        @font-face {
+            font-family: love cursive;
+            src: url(fonts/lovemy.otf) format('opentype'), url(fonts/lovemy.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1 {
+            font-family: love cursive;
+            font-size: 6em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título de External Font</h1>
+    <p>Podemos baixar uma fonte de um site como <a href="https://www.dafont.com/pt/" alt="site externo dafont" target="_blank">DaFont</a> e extrair os arquivos com extensões .otf ou .ttf dentro de uma pasta chamada (fonts) irmã de index.html. Desse modo temos o arquivo do tipo fonte que permite "recriar" essa fonte dentro do arquivo HTML5</p>
+    <p>Para recriar essa fonte dentro do nosso documento HTML5, primeiro precisamos criá-la em nosso arquivo de estilização CSS3 (style.css). O código fica parecido com:</p>
+    <pre>
+        <code>
+            @font-face {
+                font-family: love cursive;
+                src: url(fonts/lovemy.otf) format('opentype'), url(fonts/lovemy.ttf) format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+        </code>
+    </pre>
+    <p><strong>@font-face</strong> é o comando &gt; font-family é o nome que queremos "cadastrar" aquela fonte &gt; <strong>url ( )</strong> é o caminho onde aquele arquivo de fonte está &gt; <strong>format ( )</strong> é o formato da font que precisa ser colocado.</p>
+    
+</body>
+</html>

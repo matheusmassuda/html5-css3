@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinâmica</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas: com &lt;picture&gt; e &lt;source&gt;</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou aumente e diminua o tamanho do navegador.</p>
+    <picture>
+        <source media="(max-width: 730px )" srcset="images/img-300.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="images/img-700.png" type="image/png">
+        <img src="images/img-1000.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio: com <strong>&lt;picture&gt;</strong></h1>
+    <p>Aprendendo a reproduzir áudios com <abbr title="HyperText Markup Language">HTML5</abbr></p>
+    <p>A primeira maneira, mas que nems empre tem compatibilidade com navegadores é com &lt;audio&gt;</p>
+    <audio src="midias/happy-mistake.mp3" controls loop></audio>
+    <audio preload="metadata" autoplay controls>
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.ogg" type="audio/ogg">
+        <source src="midias/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue baixar áudio, para baixar o áudio clique <a href="midias/guanacast-33.mp3">aqui</a></p>
+    </audio>
+</body>
+</html>

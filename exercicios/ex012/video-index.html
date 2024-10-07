@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vídeos com HTML5</title>
+    </head>
+    <body>
+    <h1>Incorporando vídeos do Youtube: incorporação HTML5</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/R5o7TU_ihcg?si=vjrUwcvuMGkmkcAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Vídeos hospedados localmente com: &lt;video&gt;</h1>
+    <p>Esse vídeo está hospedado em meu próprio servidor.</p>
+    <video src="media/Video-Abelha-720.mp4" width="350" controls autoplay loop ></video>
+    <h2>Ampliando a capacidade de leitura: com &lt;source src=" "&gt; </h2>
+    <p>Podemos tentar ampliar a capacidade de reprodução para que nosso vídeo tenha mais chancers de ser exibido, independentemente do navegador em que ele for aberto.</p>
+    <p>Para isso, podemos colocar quantas &lt;source src=" "&gt; <strong>dentro</strong> da &lt;image&gt; forem necessárias. O navegador tentará reproduzir os arquivos <strong>na ordem</strong> em que eles aparecerem.</p>
+    <p>Teremos um código parecido com:</p>
+    <pre>
+        <code>
+            <strong>
+                &lt;img poster="images/capa-video.png" controls&gt;
+                    &lt;source src="pasta/video1.mp4" type="video/mp4"&gt;
+                    &lt;source src="pasta/video1.m4v" type="video/m4v"&gt;
+                    &lt;source src="pasta/video1.webm" type="video/webm"&gt;
+                    &lt;source src="pasta/video1.ogv" type="video/ogg"&gt;
+                &lt;/img&gt;
+            </strong>
+        </code>
+    </pre>
+    <p>O resultado do código acima fica assim &#x1F447;: </p>
+    <video width="350" poster="images/war-vitin.jpg" controls>
+        <source src="media/Video-Abelha-720.mp4" type="video/mp4">
+        <source src="media/Video-Abelha-720.m4v" type="video/mp4">
+        <source src="media/Video-Abelha-720.webm" type="video/webm">
+        <p>Seu navegador não possui compatibilidade com reprodução de vídeos.</p>
+    </video>
+</body>
+</html>

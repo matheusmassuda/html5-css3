@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: rgb(135, 224, 0);
+    text-decoration: none;
+    font-weight:500;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: aquamarine;
+}
+
+a:active {
+    text-decoration: line-through;
+}
+
+a::after {
+    content: ' [Link clicável]';
+    color: rgb(161, 4, 161);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.special {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.special::before {
+    content: "\002622";
+}
+
+.special::after {
+    content: "\002622";
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes em CSS3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+    <p>Pseudo classes são usadas para relacionar uma ação para um determinado <strong>estado</strong> de um elemento. Os estados mais comuns são: hover (mouse em cima), ativo, marcado, desabilitado. Quando um determinado elemento estiver "sofrendo" aquele determinado estado a pseudo classe irá devolver a ação.</p>
+    <p>O código em CSS3 fica parecido com:
+        <pre>
+            <code>
+        <strong>
+            div:hove{
+                background-color:blue;
+            }
+        </strong>
+            </code>
+        </pre>
+    E deve ser lido: Para as divs ":"> no estado hover > aplique background azul.
+    </p>
+    <p>Experimento deixar o mouse por cima de qualquer um desses quadrados cinzas</p>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <h1>Outro exemplo de pseudo class</h1>
+    <p>Passe o mouse no texto abaixo.</p>
+    <div>
+        Passe o mouse sobre o quadado cinza.
+        <p>TEXTO ESCONDIDO.</p>
+    </div>
+</body>
+</html>
