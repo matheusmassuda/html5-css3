@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            width: 350px;
+            border: 2px solid black;
+            border-collapse: collapse;
+            box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.35);
+        }
+
+        tr.linha {
+            background-color: aquamarine;
+        }
+
+        td.data {
+            background-color: rgb(34, 170, 125);
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        /* -------- table02 -------- */
+
+        table.table02 {
+            width: 350px;
+            height: 350px;
+        }
+
+        td.data02 {
+            text-align: center; 
+            vertical-align: middle;
+        }
+
+        td.number {
+            text-align: right;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas em HTML</h1>
+    <p>Hierarquia de Tabelas:</p>
+    <pre>
+        <code>
+            TABLE = Tabela
+                TABLE ROW = Linha de Tabela 
+                    TABLE HEADER = Cabeçalho de Tabela
+                    TABLE DATA = Dado de tabela
+        </code>
+    </pre>
+
+    <section>
+        <table>
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr class="linha">
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+            <tr class="linha">
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+            </tr>
+        </table>
+    </section><br><br>
+
+    <section>
+        <table class="table02">
+            <tr class="row02">
+                <td class="data02">A1</td>
+                <td class="data02">B1</td>
+                <td class="data02">C1</td>
+            </tr>
+            <tr class="linha02">
+                <td class="data02">A2</td>
+                <td class="data02 number">2.000</td>
+                <td class="data02">C2</td>
+            </tr>
+            <tr class="linha02">
+                <td class="data02">A3</td>
+                <td class="data02">B3</td>
+                <td class="data02 number">475.72</td>
+            </tr>
+            <tr class="linha02">
+                <td class="data02">A4</td>
+                <td class="data02">B4</td>
+                <td class="data02">C4</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
