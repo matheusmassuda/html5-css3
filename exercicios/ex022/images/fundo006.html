@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background-size</title>
+    <title>Background-size com fundo fixo</title>
     <style>
         body {
-            height: 100vh;
+            /**height: 100vh;
             background-color: black;
             background-image: url(wallpaper002.jpg);
             background-position: center top;
-            background-repeat: no-repeat;
+            background-repeat: repeat-y;
+            background-size: cover;**/
+
+            background: black url(wallpaper002.jpg) center top fixed;
             background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +31,12 @@
 <body>
     <main>
         <h1>Background-image</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur adipisci temporibus doloribus quidem cum, inventore quisquam tempore voluptates optio? Necessitatibus aspernatur nisi veniam ipsam. Aut maiores neque animi consectetur. Alias!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, doloremque magni esse possimus nulla minima cum ipsam tenetur animi officiis mollitia odio sint repudiandae sunt, autem ut reprehenderit quibusdam! Dicta.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, iste molestias consequatur fuga tempora corrupti enim harum sed temporibus inventore optio velit maiores modi eius commodi veniam porro sequi suscipit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur adipisci temporibus doloribus quidem cum, inventore quisquam tempore voluptates optio? Necessitatibus aspernatur nisi veniam ipsam. Aut maiores neque animi consectetur. Alias!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, doloremque magni esse possimus nulla minima cum ipsam tenetur animi officiis mollitia odio sint repudiandae sunt, autem ut reprehenderit quibusdam! Dicta.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, iste molestias consequatur fuga tempora corrupti enim harum sed temporibus inventore optio velit maiores modi eius commodi veniam porro sequi suscipit!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur adipisci temporibus doloribus quidem cum, inventore quisquam tempore voluptates optio? Necessitatibus aspernatur nisi veniam ipsam. Aut maiores neque animi consectetur. Alias!</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, doloremque magni esse possimus nulla minima cum ipsam tenetur animi officiis mollitia odio sint repudiandae sunt, autem ut reprehenderit quibusdam! Dicta.</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, iste molestias consequatur fuga tempora corrupti enim harum sed temporibus inventore optio velit maiores modi eius commodi veniam porro sequi suscipit!</p>
