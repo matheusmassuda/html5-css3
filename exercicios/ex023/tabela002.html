@@ -10,13 +10,14 @@
         }
 
         table {
+            position: relative;
             width: 400px;
             background-color: #eeeeee;
             border-collapse: collapse;
             text-align: center;
             box-shadow: -1px 2px 4px 1px rgba(0, 0, 0, 0.30);
         }
-
+        
         tbody {
             text-align: left;
         }
@@ -24,17 +25,31 @@
         thead, tfoot {
             background-color: #c5c9be;
             font-weight: bolder;
+            color: #eeeeee;
         }
-
+        
         td, th {
             border: 1px solid #a3a3a3;
             padding: 15px 10px 15px 15px;
         }
-
+        
         td.number {
             text-align: right;
         }
-
+        caption {
+            font-size: 1.2em;
+            padding: 10px;
+            background-color: #c5c9be;
+            color: rgb(65, 65, 65);
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(65, 65, 65);
+        }
     </style>
 </head>
 <body>
@@ -44,6 +59,7 @@
             ANATOMIA DE TABELAS COMPLEXAS:
             
             TABLE = TABELAS 
+                CAPTION = LEGENDA
                 THEAD = TABLE HEAD (CABEÇA)
                     TR, TD, TH
                 TBODY = TABLE BODY (CORPO)
@@ -52,14 +68,13 @@
                     TR, TD, TH
         </code>
     </pre>
-
     <section>
         <table>
-
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
                     <th>Estado</th>
-                    <th>População</th>
+                    <th style="width: 80px;">População</th>
                 </tr>
             </thead>
 
@@ -183,6 +198,5 @@
 
         </table>
     </section>
-    
 </body>
 </html>
