@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Froms: email e tel</h1>
+    <form action="">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="-iemail">Email:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" required pattern="^\(\d{2}\)d{4,5}-d{4}$" placeholder="(dd)0000-0000">
+                <p>Estudar sobre expressões regulares que bloqueiam escritas de dados "errados" ou não quistos. <strong>"RegEx"</strong>, mas O ideal é que se faça com JS ou PHP.</p>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
