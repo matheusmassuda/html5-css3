@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="get">
+        <fieldset>
+            <legend>Estados - Opções finitas (NÃO agrupadas)</legend>
+            <p>Para opções em grupo <strong>finitas</strong> como estados é possível criar uma lista <strong>já existente.</strong></p>
+            <p>
+                <label for="iest">Estados:</label>
+                <select name="estado" id="iest">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SC">Santa Catarina</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Estados - Opções finitas (Agrupadas)</legend>
+            <p>Já para opções em grupo <strong>finitas e agrupadas</strong> como estados também é possível criar listas agrupadas dentro da lista maior.</p>
+            <p>
+                <label for="iest">Estados:</label>
+                <select name="estado" id="iest-2">
+
+
+                    <option value="" selected>-- Seu Estado --</option>
+                    <optgroup label="Sudeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espírito Santo</option>
+                    </optgroup>
+
+                    <optgroup label="Nordeste">
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="SE">Sergipe</option>
+                    </optgroup>
+
+                </select>
+            </p>
+        </fieldset>
+
+        <p>Criando listas com possibildiades infinitas, que até mesmo <strong>não existem</strong>.</p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="ADV">Advogado</option>
+                <option value="DEV">Desenvovledor</option>
+                <option value="PROF">Professor</option>
+                <option value="CONT">Contador</option>
+                <option value="MÉD">Médico</option>
+                <option value="BIO">Biologo</option>
+                <option value="PINT">Pintos</option>
+                <option value="ENFER">Enfermeiro</option>
+                <option value="DIR">Diretor</option>
+            </datalist>
+        </p>
+
+        
+        <p>
+            <label for="imgg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Deixe uma mensagem aqui..."></textarea>
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
