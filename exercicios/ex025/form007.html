@@ -24,6 +24,24 @@
         <fieldset>
             <legend>Estados - Opções finitas (Agrupadas)</legend>
             <p>Já para opções em grupo <strong>finitas e agrupadas</strong> como estados também é possível criar listas agrupadas dentro da lista maior.</p>
+            <p>Nesse caso usaremos a combinação de tags &lt;form&gt; > &lt;label for="id"&gt; + &lt;optgroup label="nome-do-grupo"&gt; > &lt;option&gt; </p> 
+            <p>
+                <pre>
+                    <code>
+    <strong>&lt;form action="cadastro.js" method="get/post" autocomplete="on"&gt;</strong>
+        <strong>&lt;label for="idestado"&gt;</strong> Estados <strong>&lt;/form&gt;</strong>      
+        <strong>&lt;optgroup label="Sudeste"&gt;</strong>       
+
+            <strong>&lt;option selected&gt; </strong> São Paulo <strong>&lt;/option&gt;</strong>              
+            <strong>&lt;option&gt;</strong> Rio de Janeiro <strong>&lt;/option&gt;</strong>              
+            <strong>&lt;option&gt;</strong> Minas Gerais <strong>&lt;/option&gt;</strong>              
+            <strong>&lt;option&gt;</strong> Espírito Santo <strong>&lt;/option&gt;</strong>    
+
+        <strong>&lt;/optgroup&gt; </strong>          
+    <strong>&lt;/form&gt;</strong>
+                    </code>
+                </pre>
+            </p>
             <p>
                 <label for="iest">Estados:</label>
                 <select name="estado" id="iest-2">
@@ -75,7 +93,7 @@
         
         <p>
             <label for="imgg">Mensagem:</label><br>
-            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Deixe uma mensagem aqui..."></textarea>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Deixe uma mensagem..."></textarea>
         </p>
         
         <p>
