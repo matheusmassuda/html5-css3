@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Hamburguer - Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <h1>Meu Site</h1>
-        <menu>
+        <h1>Menu Hamburguer</h1>
+        <i class="material-icons" id="burguer" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -20,7 +22,7 @@
     </header>
     <main>
         <article>
-            <h2>Aplicado Media Queries</h2>
+            <h1>Aplicado Media Queries</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam nostrum voluptate quae, sunt blanditiis tempore doloremque ipsum velit optio quidem nesciunt exercitationem architecto laborum quo a, itaque mollitia accusantium!Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam nostrum voluptate quae, sunt blanditiis tempore doloremque ipsum velit optio quidem nesciunt exercitationem architecto laborum quo a, itaque mollitia accusantium!</p>
             <br>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi odit, impedit fuga, tenetur maiores exercitationem officiis expedita iure, eveniet facere recusandae tempora? Odit doloremque voluptate itaque, nesciunt magnam harum officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam nostrum voluptate quae, sunt blanditiis tempore doloremque ipsum velit optio quidem nesciunt exercitationem architecto laborum quo a, itaque mollitia accusantium!</p>
@@ -29,5 +31,14 @@
             <br>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
