@@ -34,12 +34,9 @@ header li {
     border-radius: 6px 6px 0 0;
 }
 
-header li:hover {
-    background-color: #dadada;
-    color: rgb(66, 66, 66);
-    display: inline-block;
-    padding: 12px;
-    border-radius: 6px 6px 0 0;
+li > a {
+    color: white;
+    text-decoration: none;
 }
 
 main {
