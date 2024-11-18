@@ -30,17 +30,21 @@ header > h1 {
     flex: 0 0 300px;
 }
 
-nav > ul {
+header > nav > ul {
+    border: 1px dotted rgb(76, 0, 255);
+    
     display: flex;
-    flex-flow: row;
-}
-
-nav > ul > li {
-    list-style: none;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
 header > nav > ul > li {
-    border: 1px dotted red;
+    list-style: none;
+    
+    display: flex;
+}
+
+header > nav > ul > {
     
     display: flex;
     flex-flow: row wrap;
