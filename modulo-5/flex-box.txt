@@ -1,0 +1,195 @@
+ FLEX BOX: 
+-----------------------------------------------------
+CONTAINER (pai):
+	display: flex
+-----------------------------------------------------
+CONTAINER (pai):
+	flex-direction:
+
+	(flex-direction: row)
+		main-axis = esquerda > direita
+		cross-axis = cima > baixo
+
+	(flex-direction: row-reverse)
+		main-axis = direita > esquerda
+		cross-axis = cima > baixo
+
+	(flex-direction: column)
+		main-axis = cima > baixo
+		cross-axis = esquerda > direita
+
+	(flex-direction: column-reverse)
+		main-axis = baixo > cima
+		cross-axis = esquerda > direita	
+
+-----------------------------------------------------
+CONTAINER (pai):
+	flex-wrap:
+	
+	(flex-wrap: nowrap)
+		cross-axis: stretch
+
+	(flex-wrap: wrap)
+		cross-axis direction
+
+	(flex-wrap: wrap-reverse)
+		cross-axis: opposite direction
+
+-----------------------------------------------------
+CONTAINER (pai):
+	flex-flow = flex-direction + flex-wrap
+
+	(flex-flow: row nowrap)
+		main-axis = linha esquerda > direita
+		wrap = não quebra
+
+	(flex-flow: row wrap)
+		main-axis = linha esquerda > direita
+		wrap = quebra baixo esquerda
+
+	(flex-flow: row wrap-reverse)
+		main-axis = linha esquerda > direita
+		wrap: quebra cima esquerda 
+
+	(flex-flow: rowreverse nowrap)
+		main-axis: linha direita > esquerda
+		wrap: não quebra
+
+	(flex-flow: rowreverse wrap)
+		main-axis: linha direita > esquerda
+		wrap:  quebra baixo direita
+
+	(flex-flow: rowreverse wrap-reverse)
+		main-axis: direita > esquerda
+		wrap: cima direita
+
+	(flex-flow: column nowrap)
+		main-axis: coluna cima > baixo
+		wrap: não quebra
+
+	(flex-flow: column wrap)
+		main-axis: coluna cima > baixo
+		wrap: cima direita (coluna 2)
+
+	(flex-flow: column wrap-reverse)
+		main-axis: coluna cima > baixo
+		wrap: cima esquerda (coluna 2)
+
+	(flex-flow: column-reverse nowrap)
+		main-axis: coluna baixo > cima
+		wrap: não quebra
+	
+	(flex-flow: colum-reverse wrap)
+		main-axis: coluna baixo > cima
+		wrap: baixo-direita (coluna 2)
+
+	(flex-flow: column-reverse wrap-reverse)
+		main-axis: coluna baixo > cima
+		wrap: baixo-esquerda (coluna 2)
+
+-----------------------------------------------------
+CONTAINER (pai):
+	(justify-content: flex-start)
+		1° item > main-axis: start
+
+	(justify-content: flex-end)
+		1° item > main-axis: end
+
+	(justify-content: center)
+		1° item > main-axis: center
+
+	(justify-content: space-btween)
+		1° item > main: start último item > main: end
+
+	(justify-content: space-evenly)
+		espaços iguais é o mais simétrico
+
+	(justify-content: space-around)
+		espaços somados: ao redor
+
+-----------------------------------------------------
+ITENS (filho):
+	(align-itens: stretch)
+		alonga os itens
+	
+	(align-itens: flex-start)
+		1° item no cross-start
+
+	(align-itens: flex-end)
+		1° item no cross-end
+
+	(align-itens: center)
+		cross-center
+
+-----------------------------------------------------
+CONTAINER (pai) - [CENTRALIZAÇÃO]:
+	display: flex
+	justify-content: center
+	align-itens: center
+
+-----------------------------------------------------
+CONTAINER (pai):
+	align-content (wrap)
+
+	(align-content: stretch)
+		alonga os itens
+
+	(align-content: flex-start)
+		cross-axis: start com wrap
+
+	(align-content: flex-end)
+		cross-axis: end com wrap
+
+	(align-content: center)
+		cross-axis center com wrap
+
+	(align-content: space-btween)
+		cross-axis grudado start e and com wrap
+
+	(align-content: space-evenly)
+		cross-axis espaços padrão com wrap
+
+	(align-content: space-around)
+		cross-axis espaços ao redor somados com wrap
+
+-----------------------------------------------------
+ITEMS (filho):
+	order: (padrão = 0)
+
+	order: (-4, -2 , 0, 0, 6)
+
+-----------------------------------------------------
+ITEMS (filho):
+	align-self: (alinhamento unitário)
+
+	(align-self: auto)
+		herda configuração do pai
+	
+	(align-self: flex-start)
+		unitariamente no cross-start
+
+	(align-self: flex-end)
+		unitariamente no cross-end
+
+	(align-self: center)
+		unitariamente no cross-center
+
+	(align-self: stretch)
+		unitariamente esticado
+
+-----------------------------------------------------
+ITEMS (filho):
+	flex-basis: (auto)
+
+	(flex-basis: auto)
+		item = mantém tamanho do conteúdo
+
+	(flex-basis: 200px)
+		item = tamanho exato main-axis (individual)
+		diminui proporcionalmente.
+		melhor que width que é sempre fixo. 
+
+	
+	
+
+		
