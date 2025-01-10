@@ -41,8 +41,8 @@ Este repositório reúne projetos e exercícios voltados para a consolidação d
   - Exercícios
 
 #### 🗃️ Módulo 4:
-   -  **Conceitos e tags:** iframes, formulários, Media Queries e projeto prático
-   - **Formulários:** Métodos get e post para formulários, checkbox, radio button, select, datalist, textarea, output, etc)
+   -  **Conceitos e tags:** iframes, formulários, `Media Queries` e projeto prático
+   - **Formulários:** Métodos `get` e `post` para formulários, `checkbox`, `radio button`, `select`, `datalist`, `textarea`, `output`, etc)
    - **Responsividade:** (Mobile First, breakpoints, menu responsivo)
    - **Aplicação de estilos com CSS3**  
 - **Projetos e Desafios:**  
