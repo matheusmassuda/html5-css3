@@ -5,35 +5,40 @@ Repositório com **projetos, exercícios, resumos e insights** realizados durant
 - [Curso Completo CSS3](https://www.youtube.com/watch?v=HtVRRHoASes&list=PL2Fdisxwzt_f5C7Mv0kg1EAHhy2VJLf1c) da **Programação Web** (playlist).
 
 ## Sobre  
-Projetos e exercícios desenvolvidos com o objetivo de **consolidar os conceitos** fundamentais dessas tecnologias essenciais para o **desenvolvimento web**, abrangendo desde estruturas básicas de páginas até estilizações modernas com CSS.  
+Este repositório reúne projetos e exercícios voltados para a consolidação dos **fundamentos de HTML5 e CSS3**, desde a estruturação básica de páginas até estilizações modernas.  
 
 ## Conteúdo  
 ### 📂 Curso em Vídeo (Módulo 1):
-- **Conceitos iniciais e Exercícios Práticos:** bibliografias recomendadas e estrutura do curso.  Internet, Front-end, Back-end, Full stack; direitos sobre conteúdos de terceiros e introdução ao HTML5 semântico.
-  - Estruturas em HTML5 (Tags e atributos) 
-     - (headings, parágrafos, listas, tabelas, imagens, mídias, formatações, etc). 
-  - Propriedades básicas de CSS3
+- **Conceitos e Exercícios Práticos:**
+- Introdução ao HTML5 semântico: tags e atributos
+   - Criação de títulos `<h1>`, hierarquias `<h2> ... <h6>`, diagramação de textos em parágrafos `<p>` e formatações de texto com `<code>`, `<blockquote>`, `<strong>`, `<em>`, `<s>`, etc.
+   - Estruturação de containers com `<div>`, `<span>` para estilizações específicas, `<a>` para navegação entre páginas.
+- Definição de Front-end, Back-end e Full stack
+- Direitos sobre conteúdos de terceiros. 
+- Propriedades básicas de CSS3
      - (CSS inline, interno e externo)  
-- **Projetos iniciais e Desafios:**  
-  - Práticas de HTML5 e CSS3 propostas (desafios)
-  - Layouts simples de página web 
-  - Landing pages minimalistas
+- **Projetos e Desafios:**  
+  - Exercícios práticos de HTML5 e CSS3.
+  - Criação de layouts simples em páginas web 
+  - Desenvolvimento de landing pages minimalistas.
     
 ### 📂 Curso em Vídeo (Módulo 2):
-- **Conceitos iniciais e Exercícios Práticos:** (psicologia das cores, tipografia, elementos e modelos, responsividade, variáveis e transformação de layout em código)
-     - (paleta e aplicação de cores em CSS3)
-     - (Anatomia, tamanho, estilo e peso de fontes + Google fontes)
-     - (Pseudo-elementos e box-model).  
-- **Projetos iniciais e Desafios:**  
-  - Práticas de HTML5 e CSS3 propostas (desafios)
-  - Exercícios
+- **Conceitos e Exercícios Práticos:** 
+     - Psicologia das cores e aplicação de paletas no CSS3.
+     - Tipografia: tamanho, estilo, peso de fontes e uso do Google Fonts.
+     - Pseudo-elementos e conceitos do box model.
+     - Transformação de layouts em código  
+- **Projetos e Desafios:**  
+  - Exercícios práticos de HTML5 e CSS3.
+  - Estudos de caso simples de websites existentes
 
  ### 📂 Curso em Vídeo (Módulo 3):
-- **Conceitos iniciais e Exercícios Práticos:** (Git, Github, manipulação e configuração de imagens, tabelas)
-     - (Gerenciamento de repositórios: criação, commit, push, pull e clonagem)
-     - (Github Desktop e Github pages com hospedagem simples)
-     - (background, posicionamento e responsividade de imagens)  
-- **Projetos iniciais e Desafios:**  
+- **Conceitos e Exercícios Práticos:**
+     - Definição de: Git, Github, repositórios locais, remotos e servidores
+     - Gerenciamento de repositórios: criação, commits, pushs, pulls e clonagens de repositórios
+     - Uso e aplicações de Github Desktop para versionamento e Github pages para hospedagem simples
+     - Posicionamento e responsividade de imagens, backgrounds e elementos na página com CSS
+- **Projetos e Desafios:**  
   - Práticas de HTML5 e CSS3 propostas (desafios)
   - Exercícios
 
@@ -42,13 +47,13 @@ Projetos e exercícios desenvolvidos com o objetivo de **consolidar os conceitos
      - (Métodos get e post para formulários, checkbox, radio button, select, datalist, textarea, output, etc)
      - (Mobile First, breakpoints, menu responsivo)
      - (Aplicação de estilos com CSS3)  
-- **Projetos iniciais e Desafios:**  
+- **Projetos e Desafios:**  
   - Práticas de HTML5 e CSS3 propostas (desafios)
 
 ### 📂 Curso em Vídeo (Módulo 5):
 - **Conceitos iniciais e Exercícios Práticos:** (Direção, alinhamento, anatomia e propriedades de eixos)
      - (Containers, Flexbox, flex-direction, flex-wrap, flex-flow, justify-content, align-itens e content, displays, etc)
-- **Projetos iniciais e Desafios:**  
+- **Projetos e Desafios:**  
   - Práticas de HTML5 e CSS3 propostas (desafios)
 
 ## Ferramentas Utilizadas  
